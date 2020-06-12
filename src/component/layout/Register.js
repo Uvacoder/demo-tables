@@ -13,7 +13,7 @@ const Register = () => {
     >
       <div className="text-center">
         <form className="form-signin">
-          <img className="mb-4" src={ja} alt="" width="100" height="100" />
+          <img className="mb-4" src={ja} alt="" width="80" height="80" />
           <h1 className="h3 mb-3 font-weight-normal">Please register</h1>
           <label for="inputEmail" className="sr-only">
             Name
@@ -51,7 +51,9 @@ const Register = () => {
           <button className="btn btn-lg btn-primary btn-block" type="submit">
             Register
           </button>
-          <p className="mt-5 mb-3 text-muted">&copy; 2020</p>
+          <p className="mt-5 mb-3 text-muted">
+            <a href="/login">Login</a>
+          </p>
         </form>
       </div>
     </div>

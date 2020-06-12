@@ -1,5 +1,5 @@
 import React from "react";
-import ja from "./ja21.png"
+import ja from "./ja21.png";
 
 const SignIn = () => {
   return (
@@ -13,13 +13,7 @@ const SignIn = () => {
     >
       <div className="text-center">
         <form className="form-signin">
-          <img
-            className="mb-4"
-            src={ja}
-            alt=""
-            width="100"
-            height="100"
-          />
+          <img className="mb-4" src={ja} alt="" width="100" height="100" />
           <h1 className="h3 mb-3 font-weight-normal">Please sign in</h1>
           <label for="inputEmail" className="sr-only">
             Email address
@@ -50,7 +44,9 @@ const SignIn = () => {
           <button className="btn btn-lg btn-primary btn-block" type="submit">
             Sign in
           </button>
-          <p className="mt-5 mb-3 text-muted">&copy; 2020</p>
+          <p className="mt-5 mb-3 text-muted">
+            <a href="/register">Register</a>
+          </p>
         </form>
       </div>
     </div>

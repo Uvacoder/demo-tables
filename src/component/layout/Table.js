@@ -1,12 +1,13 @@
 import React from "react";
-import { Table, Button } from "reactstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrashAlt, faEdit } from "@fortawesome/free-solid-svg-icons";
+import { Table } from "reactstrap";
 
 const DashItem = () => {
   return (
-    <div className="col-md-9 ml-sm-auto col-lg-10 px-md-4 dashTop" style={{ marginTop: "110px" }}>
-      <div >
+    <div
+      className="col-md-9 ml-sm-auto col-lg-10 px-md-4 dashTop"
+      style={{ marginTop: "110px" }}
+    >
+      <div>
         <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
           <h1 className="h2">Dashboard</h1>
         </div>
@@ -22,7 +23,6 @@ const DashItem = () => {
             <th>Closing stock</th>
             <th>Price</th>
             <th>Your Name</th>
-           
           </tr>
         </thead>
         <tbody>
@@ -35,7 +35,6 @@ const DashItem = () => {
             <td>230</td>
             <td>#40,000</td>
             <td>John</td>
-            
           </tr>
           <tr>
             <th scope="row">2</th>
@@ -46,7 +45,6 @@ const DashItem = () => {
             <td>260</td>
             <td>#70,000</td>
             <td>Tayo</td>
-            
           </tr>
           <tr>
             <th scope="row">3</th>
