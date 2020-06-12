@@ -13,35 +13,30 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <div>
-          <Route exact path="/login" component={SignIn} />
-        </div>
-        <div>
-          <Route
-            exact
-            path="/"
-            render={(props) => (
-              <Fragment>
-                <NavbarItem />
-                <Sidebar />
-                <Dashboard/>
-                <FormItem/>
-              </Fragment>
-            )}
-          />
-
-          <Route
-            exact
-            path="/"
-            render={(props) => (
-              <Fragment>
-                <NavbarItem />
-                <Sidebar />
-                <DashItem/>
-              </Fragment>
-            )}
-          />
-        </div>
+        <Route exact path="/login" component={SignIn} />
+        <Route
+          exact
+          path="/"
+          render={(props) => (
+            <Fragment>
+              <NavbarItem />
+              <Sidebar />
+              <DashItem />
+            </Fragment>
+          )}
+        />
+        <Route
+          exact
+          path="/form"
+          render={(props) => (
+            <Fragment>
+              <NavbarItem />
+              <Sidebar />
+              <Dashboard />
+              <FormItem />
+            </Fragment>
+          )}
+        />
       </Switch>
     </BrowserRouter>
   );
