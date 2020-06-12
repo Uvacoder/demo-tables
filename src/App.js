@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import "./App.css";
-import axios from "axios";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import NavbarItem from "./component/Navigations/NavbarItem";
 import Sidebar from "./component/Navigations/Sidebar";
