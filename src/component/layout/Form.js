@@ -11,7 +11,7 @@ const FormItem = (props) => {
         style={{ marginTop: "110px" }}
       >
         <img
-          className=" col-sm-12 col-md-6 offset-md-5"
+          className="col-sm-12 col-md-6 offset-md-5"
           src={ja}
           alt="Logo"
           style={{ maxHeight: "200px", maxWidth: "200px" }}
