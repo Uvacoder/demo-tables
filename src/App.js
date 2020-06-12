@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "./App.css";
 import axios from "axios";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
@@ -17,12 +17,30 @@ function App() {
           <Route exact path="/login" component={SignIn} />
         </div>
         <div>
-          <NavbarItem />
-          <Sidebar />
-          <Route exact path="/Form" component={FormItem} />
-          <Route exact path="/table" component={DashItem} />
-          <Dashboard />
-          <DashItem />
+          <Route
+            exact
+            path="/"
+            render={(props) => (
+              <Fragment>
+                <NavbarItem />
+                <Sidebar />
+                <Dashboard/>
+                <FormItem/>
+              </Fragment>
+            )}
+          />
+
+          <Route
+            exact
+            path="/"
+            render={(props) => (
+              <Fragment>
+                <NavbarItem />
+                <Sidebar />
+                <DashItem/>
+              </Fragment>
+            )}
+          />
         </div>
       </Switch>
     </BrowserRouter>
