@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import axios from "axios";
-import {BrowserRouter, Route, Switch} from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import NavbarItem from "./component/Navigations/NavbarItem";
 import Sidebar from "./component/Navigations/Sidebar";
 import Dashboard from "./component/layout/Dashboard";
@@ -12,13 +12,18 @@ import SignIn from "./component/layout/SignIn";
 function App() {
   return (
     <BrowserRouter>
-    <Switch>
-      <Route exact path="/login" component={SignIn}/>
-      <Route exact path ="/login" component={FormItem}/>
-      <NavbarItem />
-      <Sidebar />
-      <Dashboard />
-      <DashItem />
+      <Switch>
+        <div>
+          <Route exact path="/login" component={SignIn} />
+        </div>
+        <div>
+          <NavbarItem />
+          <Sidebar />
+          <Route exact path="/Form" component={FormItem} />
+          <Route exact path="/table" component={DashItem} />
+          <Dashboard />
+          <DashItem />
+        </div>
       </Switch>
     </BrowserRouter>
   );
