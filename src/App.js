@@ -7,12 +7,14 @@ import Sidebar from "./component/Navigations/Sidebar";
 import FormItem from "./component/layout/Form";
 import DashItem from "./component/layout/Table";
 import SignIn from "./component/layout/SignIn";
+import Register from "./component/layout/Register";
 
 function App() {
   return (
     <BrowserRouter>
       <Switch>
         <Route exact path="/login" component={SignIn} />
+        <Route exact path="/register" component={Register} />
         <Route
           exact
           path="/"
