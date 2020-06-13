@@ -1,5 +1,6 @@
 import React from "react";
 import ja from "./13.png";
+import styles from "./Login.module.css"
 
 const Login = () => {
   return (
@@ -12,7 +13,7 @@ const Login = () => {
       }}
     >
       <div className="text-center">
-        <form className="form-signin">
+        <form className={styles.formSignIn}>
           <img
             className="mb-5 offset-md-2"
             src={ja}

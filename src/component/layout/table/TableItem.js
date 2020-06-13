@@ -18,7 +18,7 @@ const TableItem = () => {
           <th>Opening stock</th>
           <th>Daily Production</th>
           <th>Closing stock</th>
-          <th>Price</th>
+          <th>Price</th> 
           <th>Your Name</th>
           <th></th>
         </tr>
