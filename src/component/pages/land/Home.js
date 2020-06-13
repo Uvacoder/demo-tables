@@ -1,6 +1,6 @@
 import React from "react";
-import FormItem from "../../layout/FormItem";
-import TableItem from "../../layout/TableItem";
+import FormItem from "../../layout/forms/FormItem";
+import TableItem from "../../layout/table/TableItem";
 import NavbarItem from "../../navigations/navbar/NavbarItem";
 import { Row, Col, Container } from "reactstrap";
 const Home = () => {

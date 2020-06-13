@@ -4,9 +4,11 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Login from "./component/pages/login/Login";
 import Register from "./component/pages/register/Register";
 import Home from "./component/pages/land/Home";
+import ItemState from "./context/items/ItemsState";
 
 const App = () => {
   return (
+    <ItemState>
     <BrowserRouter>
       <Switch>
       <Fragment>
@@ -16,6 +18,7 @@ const App = () => {
         </Fragment>
       </Switch>
     </BrowserRouter>
+    </ItemState>
   );
 };
 
