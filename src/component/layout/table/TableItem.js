@@ -1,23 +1,49 @@
-import React, {useContext} from "react";
-import { Table } from "reactstrap";
+import React, { useContext } from "react";
+import { Button } from "reactstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrashAlt, faEdit } from "@fortawesome/free-solid-svg-icons";
 import ItemsContext from "../../../context/items/ItemsContext";
 
 const TableItem = () => {
-  
-  const itemsContext = useContext(ItemsContext)
+  const itemsContext = useContext(ItemsContext);
 
-  const {contacts} = itemsContext
-
+  const { items } = itemsContext;
 
   return (
     <div>
-      <div>
-        <div>
-          <h1 className="h2">Dashboard</h1>
-        </div>
-      </div>
-        <h1>Text</h1>
-
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name of Items</th>
+          <th>Opening stock</th>
+          <th>Daily Production</th>
+          <th>Closing stock</th>
+          <th>Price</th>
+          <th>Your Name</th>
+          <th></th>
+        </tr>
+      </thead>
+      {items.map((item) => (
+        <tbody>
+          <tr>
+            <th>{item.id}</th>
+            <td>{item.item}</td>
+            <td>{item.open}</td>
+            <td>{item.prod}</td>
+            <td>{item.closing}</td>
+            <td>{item.price}</td>
+            <td>{item.name}</td>
+            <td>
+              <Button color="success">
+                <FontAwesomeIcon icon={faEdit} />
+              </Button>{" "}
+              <Button color="danger">
+                <FontAwesomeIcon icon={faTrashAlt} />
+              </Button>
+            </td>
+          </tr>
+        </tbody>
+      ))}
     </div>
   );
 };
