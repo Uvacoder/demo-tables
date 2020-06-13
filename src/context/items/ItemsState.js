@@ -52,6 +52,10 @@ const ItemState = (props) => {
   const [state, dispatch] = useReducer(itemsReducer, initialState);
 
   //Add Item
+  const addItem=(items)=>{
+      items.id=4
+      dispatch({type: ADD_ITEM, payload:items})
+  }
 
   //Delete Item
 
@@ -75,6 +79,7 @@ const ItemState = (props) => {
         items: state.items,
         current: state.current,
         filtered: state.filtered,
+        addItem
       }}
     >
       {props.children}

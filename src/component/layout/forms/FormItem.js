@@ -1,16 +1,29 @@
-import React, {useState} from "react";
+import React, { useState, useContext } from "react";
 import { Button, Form, FormGroup, Label, Input } from "reactstrap";
+import ItemsContext from "../../../context/items/ItemsContext";
 
 const FormItem = (props) => {
+  const itemsContext = useContext(ItemsContext);
 
-  const [items, setItems]=useState({    
+  const { addItem } = itemsContext;
+
+  const [items, setItems] = useState({
     item: "",
-    open:"",
-    prod:"",
-    closing:"",
-    price:"",
-    name:""
-  })
+    open: "",
+    prod: "",
+    closing: "",
+    price: "",
+    name: "",
+  });
+
+  const onChange = (e) => {
+    setItems({ ...items, [e.target.name]: e.target.value });
+  };
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    addItem(items);
+  };
 
   return (
     <div>
@@ -19,7 +32,7 @@ const FormItem = (props) => {
           <h1 className="h2">Form Inputs</h1>
         </div>
       </div>
-      <Form className="container formTop">
+      <Form onSubmit={onSubmit}>
         <FormGroup>
           <Label for="exampleName">Item name</Label>
           <Input
