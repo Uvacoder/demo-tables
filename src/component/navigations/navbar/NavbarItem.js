@@ -8,6 +8,7 @@ import {
   NavItem,
   NavLink,
 } from "reactstrap";
+import styles from "./navbaritem.module.css";
 
 const NavbarItem = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,8 +17,8 @@ const NavbarItem = () => {
 
   return (
     <div>
-      <Navbar color="dark" light expand="md">
-        <NavbarBrand href="/" light>
+      <Navbar color="success" light expand="md">
+        <NavbarBrand href="/" light className={styles.tablify}>
           Tablify
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
