@@ -3,7 +3,7 @@ import { Col, Row, Button, Form, FormGroup, Label, Input } from "reactstrap";
 
 const FormItem = (props) => {
   return (
-    <div xs="6" className="container">
+    <div xs="6" className=" col-6">
       <div>
         <main>
           <div>
@@ -12,7 +12,6 @@ const FormItem = (props) => {
         </main>
       </div>
       <Form>
-        <Row form>
           <Col>
             <FormGroup>
               <Label for="exampleDate">Date</Label>
@@ -35,7 +34,6 @@ const FormItem = (props) => {
               />
             </FormGroup>
           </Col>
-        </Row>{" "}
         <Button
           color="success"
           style={{ marginTop: "20px", marginBottom: "20px" }}

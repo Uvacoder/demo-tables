@@ -20,7 +20,7 @@ const App = () => {
           render={(props) => (
             <Fragment>
               <NavbarItem />
-              <Row>
+              <Row xs="12">
               <FormItem />
               <TableItem />
               </Row>
