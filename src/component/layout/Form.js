@@ -3,21 +3,17 @@ import { Col, Row, Button, Form, FormGroup, Label, Input } from "reactstrap";
 
 const FormItem = (props) => {
   return (
-    <div>
-      <div
-        role="main"
-        className="col-md-9 ml-sm-auto col-lg-10 px-md-4"
-        style={{ marginTop: "110px" }}
-      >
+    <div xs="6" className="container">
+      <div>
         <main>
-          <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+          <div>
             <h1 className="h2">Form Inputs</h1>
           </div>
         </main>
       </div>
-      <Form className="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+      <Form>
         <Row form>
-          <Col md={6}>
+          <Col>
             <FormGroup>
               <Label for="exampleDate">Date</Label>
               <Input
@@ -28,7 +24,7 @@ const FormItem = (props) => {
               />
             </FormGroup>
           </Col>
-          <Col md={6}>
+          <Col>
             <FormGroup>
               <Label for="exampleName">Item name</Label>
               <Input
@@ -39,64 +35,7 @@ const FormItem = (props) => {
               />
             </FormGroup>
           </Col>
-        </Row>
-        <FormGroup>
-          <Label for="exampleNumber">Opening stock</Label>
-          <Input
-            type="number"
-            name="number"
-            required
-            placeholder="Input opening stock here"
-          />
-        </FormGroup>
-        <FormGroup>
-          <Label for="exampleNumber">Daily production</Label>
-          <Input
-            type="number"
-            name="number"
-            required
-            placeholder="Input Daily production here"
-          />
-        </FormGroup>
-        <FormGroup>
-          <Label for="exampleNumber">Closing stock</Label>
-          <Input
-            type="number"
-            name="number"
-            required
-            placeholder="Input closing stock here"
-          />
-        </FormGroup>
-        <Row form>
-          <Col md={6}>
-            <FormGroup>
-              <Label for="exampleNumber">Price</Label>
-              <Input
-                type="number"
-                name="number"
-                required
-                placeholder="Input Price here"
-              />
-            </FormGroup>
-          </Col>
-          <Col md={6}>
-            <FormGroup>
-              <Label for="exampleNumber">Your name</Label>
-              <Input
-                type="number"
-                name="number"
-                required
-                placeholder="Input Your name here"
-              />
-            </FormGroup>
-          </Col>
-        </Row>
-        <FormGroup check>
-          <Input type="checkbox" name="check" id="exampleCheck" />
-          <Label for="exampleCheck" check required>
-            Admin Verified
-          </Label>
-        </FormGroup>
+        </Row>{" "}
         <Button
           color="success"
           style={{ marginTop: "20px", marginBottom: "20px" }}

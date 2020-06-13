@@ -6,6 +6,7 @@ import FormItem from "./component/layout/Form";
 import TableItem from "./component/layout/Table";
 import Login from "./component/pages/login/Login";
 import Register from "./component/pages/register/Register";
+import { Row } from "reactstrap";
 
 const App = () => {
   return (
@@ -19,7 +20,10 @@ const App = () => {
           render={(props) => (
             <Fragment>
               <NavbarItem />
+              <Row>
+              <FormItem />
               <TableItem />
+              </Row>
             </Fragment>
           )}
         />
