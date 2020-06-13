@@ -1,7 +1,7 @@
 import React from "react";
 import ja from "./13.png";
 
-const SignIn = () => {
+const Login = () => {
   return (
     <div
       style={{
@@ -59,4 +59,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default Login;

@@ -4,14 +4,14 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import NavbarItem from "./component/navigations/navbar/NavbarItem";
 import FormItem from "./component/layout/Form";
 import TableItem from "./component/layout/Table";
-import SignIn from "./component/pages/signIn/SignIn";
+import Login from "./component/pages/login/Login";
 import Register from "./component/pages/register/Register";
 
-const App=()=> {
+const App = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/login" component={SignIn} />
+        <Route exact path="/login" component={Login} />
         <Route exact path="/register" component={Register} />
         <Route
           exact
@@ -19,7 +19,6 @@ const App=()=> {
           render={(props) => (
             <Fragment>
               <NavbarItem />
-
               <TableItem />
             </Fragment>
           )}
@@ -30,7 +29,6 @@ const App=()=> {
           render={(props) => (
             <Fragment>
               <NavbarItem />
-
               <FormItem />
             </Fragment>
           )}
@@ -38,6 +36,6 @@ const App=()=> {
       </Switch>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
