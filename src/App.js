@@ -2,12 +2,12 @@ import React, { Fragment } from "react";
 import "./App.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import NavbarItem from "./component/navigations/navbar/NavbarItem";
-import Sidebar from "./component/navigations/sidebar/Sidebar";
 import FormItem from "./component/layout/Form";
 import TableItem from "./component/layout/Table";
 import SignIn from "./component/pages/signIn/SignIn";
 import Register from "./component/pages/register/Register";
-function App() {
+
+const App=()=> {
   return (
     <BrowserRouter>
       <Switch>
@@ -19,7 +19,7 @@ function App() {
           render={(props) => (
             <Fragment>
               <NavbarItem />
-              <Sidebar />
+
               <TableItem />
             </Fragment>
           )}
@@ -30,7 +30,7 @@ function App() {
           render={(props) => (
             <Fragment>
               <NavbarItem />
-              <Sidebar />
+
               <FormItem />
             </Fragment>
           )}

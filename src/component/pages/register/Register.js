@@ -13,7 +13,13 @@ const Register = () => {
     >
       <div className="text-center">
         <form className="form-signin">
-          <img className="mb-4" src={ja} alt="" width="80" height="80" />
+          <img
+            className="mb-5 offset-md-2"
+            src={ja}
+            alt=""
+            width="230"
+            height="80"
+          />
           <h1 className="h3 mb-3 font-weight-normal">Please register</h1>
           <label for="inputEmail" className="sr-only">
             Name

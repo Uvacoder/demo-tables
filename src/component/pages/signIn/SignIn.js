@@ -1,4 +1,4 @@
-import React from "./node_modules/react";
+import React from "react";
 import ja from "./13.png";
 
 const SignIn = () => {
@@ -13,7 +13,13 @@ const SignIn = () => {
     >
       <div className="text-center">
         <form className="form-signin">
-          <img className="mb-4" src={ja} alt="" width="100" height="100" />
+          <img
+            className="mb-5 offset-md-2"
+            src={ja}
+            alt=""
+            width="230"
+            height="80"
+          />
           <h1 className="h3 mb-3 font-weight-normal">Please sign in</h1>
           <label for="inputEmail" className="sr-only">
             Email address
