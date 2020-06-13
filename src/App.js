@@ -1,13 +1,12 @@
 import React, { Fragment } from "react";
 import "./App.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import NavbarItem from "./component/Navigations/NavbarItem";
-import Sidebar from "./component/Navigations/Sidebar";
+import NavbarItem from "./component/navigations/navbar/NavbarItem";
+import Sidebar from "./component/navigations/sidebar/Sidebar";
 import FormItem from "./component/layout/Form";
-import DashItem from "./component/layout/Table";
-import SignIn from "./component/layout/SignIn";
-import Register from "./component/layout/Register";
-
+import TableItem from "./component/layout/Table";
+import SignIn from "./component/pages/signIn/SignIn";
+import Register from "./component/pages/register/Register";
 function App() {
   return (
     <BrowserRouter>
@@ -21,7 +20,7 @@ function App() {
             <Fragment>
               <NavbarItem />
               <Sidebar />
-              <DashItem />
+              <TableItem />
             </Fragment>
           )}
         />

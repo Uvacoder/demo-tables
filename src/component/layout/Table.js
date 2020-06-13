@@ -1,7 +1,7 @@
 import React from "react";
 import { Table } from "reactstrap";
 
-const DashItem = () => {
+const TableItem = () => {
   return (
     <div
       className="col-md-9 ml-sm-auto col-lg-10 px-md-4 dashTop"
@@ -62,4 +62,4 @@ const DashItem = () => {
   );
 };
 
-export default DashItem;
+export default TableItem;
