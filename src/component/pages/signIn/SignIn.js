@@ -1,5 +1,5 @@
-import React from "react";
-import ja from "./ja21.png";
+import React from "./node_modules/react";
+import ja from "./13.png";
 
 const SignIn = () => {
   return (

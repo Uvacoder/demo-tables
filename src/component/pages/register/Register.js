@@ -1,5 +1,5 @@
 import React from "react";
-import ja from "./ja21.png";
+import ja from "./13.png";
 
 const Register = () => {
   return (
