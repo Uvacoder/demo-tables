@@ -30,6 +30,7 @@
   
   /* Center align the text within the three columns below the carousel */
   .marketing{
+    margin-top:300px;
     bottom: 50%;
   }
 
