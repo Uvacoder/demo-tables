@@ -7,7 +7,11 @@ import ItemsContext from "../../../context/items/ItemsContext";
 const TableItem = () => {
   const itemsContext = useContext(ItemsContext);
 
-  const { items } = itemsContext;
+  const { items, deleteItem } = itemsContext;
+
+  const onDelete=()=>{
+    deleteItem() 
+  }
 
   return (
     <div>
@@ -38,7 +42,7 @@ const TableItem = () => {
                 <FontAwesomeIcon icon={faEdit} />
               </Button>{" "}
               <Button color="danger">
-                <FontAwesomeIcon icon={faTrashAlt} />
+                <FontAwesomeIcon icon={faTrashAlt} onClick={onDelete} />
               </Button>
             </td>
           </tr>

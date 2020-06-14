@@ -58,6 +58,9 @@ const ItemState = (props) => {
   }
 
   //Delete Item
+  const deleteItem=(id)=>{
+    dispatch({type: DELETE_ITEM, payload:id})
+  }
 
   //Edit Item
 
@@ -79,7 +82,8 @@ const ItemState = (props) => {
         items: state.items,
         current: state.current,
         filtered: state.filtered,
-        addItem
+        addItem,
+        deleteItem
       }}
     >
       {props.children}
