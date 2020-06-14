@@ -4,13 +4,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashAlt, faEdit } from "@fortawesome/free-solid-svg-icons";
 import ItemsContext from "../../../context/items/ItemsContext";
 
-const TableItem = () => {
+const TableItem = (item) => {
   const itemsContext = useContext(ItemsContext);
 
   const { items, deleteItem } = itemsContext;
-
+  
   const onDelete=()=>{
-    deleteItem() 
+     
   }
 
   return (
@@ -28,7 +28,7 @@ const TableItem = () => {
         </tr>
       </thead>
       {items.map((item) => (
-        <tbody>
+        <tbody key={item.id}>
           <tr>
             <th>{item.id}</th>
             <td>{item.item}</td>
